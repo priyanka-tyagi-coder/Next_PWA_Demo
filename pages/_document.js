@@ -11,9 +11,6 @@ class MyDocument extends Document {
          
         </Head>
         <body>
-        {/* <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-messaging.js"></script> */}
-  {/* <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-messaging.js"></script> */}
           <Main />
           <NextScript />
         </body>

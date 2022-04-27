@@ -1,9 +1,25 @@
 .container {
   padding: 0 2rem;
+  background-color: #07051c;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logonagarro {
+  max-height: 45px;
+  height: 45px;
 }
 
 .main {
   min-height: 100vh;
+
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -83,6 +99,9 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  height: auto;
+  background: white;
+
 }
 
 .card:hover,
