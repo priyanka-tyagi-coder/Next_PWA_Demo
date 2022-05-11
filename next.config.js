@@ -3,15 +3,24 @@
 //   reactStrictMode: true,
 // }
 
-const withPWA = require("next-pwa");
 
-module.exports = withPWA({
-  pwa: {
-    dest: "public",
-    register: true,
-    skipWaiting: true,
-   
-  },
-});
+  const withPWA = require("next-pwa");
+  const runtimeCaching = require("next-pwa/cache");
+  
+  module.exports = withPWA({
+    reactStrictMode: true,
+    pwa: {
+      dest: "public",
+      register: true,
+      skipWaiting: true,
+      runtimeCaching,
+      buildExcludes: [/manifest.json$/]
+    },
+ 
+    images: {
+      loader: 'akamai',
+      path: '',
+    },
+  });
 
 // module.exports = nextConfig
