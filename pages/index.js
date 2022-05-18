@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { initializeFirebase } from '../public/push-notification';
 import { askForPermissionToReceiveNotifications } from '../public/push-notification';
@@ -34,7 +33,7 @@ export default function Home() {
             coffees.map((item) => {
               return (
               <div className={styles.card} key={item?.name}>
-                <Image src={item?.image} width="250" height="150"  alt='coffee'/>
+                <img src={item?.image} width="250" height="187"  alt='coffee'/>
                 <h1>{item?.name}</h1>
                 <a href="#">Taste</a>
             </div>)
